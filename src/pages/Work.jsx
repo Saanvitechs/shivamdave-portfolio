@@ -274,9 +274,6 @@ const Work = () => {
     <div className="min-h-screen text-white px-6 md:px-12 pt-20 pb-32 max-w-7xl mx-auto">
       {/* Header */}
       <div className="mb-24 relative">
-        {/* Accent Line */}
-        {/* <div className="absolute -left-6 top-6 h-16 w-1 bg-gradient-to-b from-blue-500 to-purple-500 rounded-full" /> */}
-
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-blue-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
           My <span className="text-yellow-400">Work</span> 
         </h1>
