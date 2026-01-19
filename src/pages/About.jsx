@@ -5,6 +5,12 @@ import react from "../assets/skills/react.gif";
 import postman from "../assets/skills/postman.png";
 import docker from "../assets/skills/docker.png";
 import aws from "../assets/skills/aws.png";
+import da from '../assets/skills/developer.png';
+import ma from '../assets/skills/microservices.png';
+import sa from '../assets/skills/SA_icon.png';
+import db from '../assets/skills/db_managment.png';
+// import sa from '../assets/skills/SA_icon.png';
+
 import React, { useEffect, useRef } from "react";
 // import postgres from "../assets/skills/postgres.gif";
 // import kafka from "../assets/skills/kafka.gif";
@@ -211,23 +217,24 @@ const About = () => {
             {
               title: "Java Full-Stack Developer",
               text: "High-quality, scalable websites built at a professional level.",
-              icon: "/assets/images/icon-dev.svg",
+              icon: da,
             },
             {
               title: "Backend Architect",
               text: "Professional development of Android and iOS applications.",
-              icon: "/assets/images/icon-app.svg",
+              icon: sa,
             },
             {
               title: "System Design & Microservices",
               text: "Modern, intuitive designs focused on user experience.",
-              icon: "/assets/images/icon-design.svg",
+              icon: ma,
             },
             {
-              title: "Backend Development",
-              text: "High-performance backend systems designed for scalability.",
-              icon: "/assets/images/icon-backend.svg",
+              title: "DataBase Management",
+              text: "Efficient and secure database design, optimization, and management for scalable applications.",
+              icon: db,
             },
+
           ].map((service, i) => (
             <li
               key={i}
@@ -307,36 +314,36 @@ const About = () => {
 
       {/*Skill icon Scroller  */}
 
-      <section className="max-w-6xl mx-auto px-6 py-16">
-        <h3 className="text-4xl font-bold text-white mb-5">Skills</h3>
+      <section className="max-w-6xl mx-auto px-6 py-16 overflow-hidden">
+  <h3 className="text-4xl font-bold text-white mb-5">Skills</h3>
 
-        <ul
-          ref={scrollRef}
-          className="flex gap-6 overflow-x-auto pb-8 scroll-smooth snap-x snap-mandatory overscroll-x-contain scrollbar-hide"
-        >
-          {skills.map((skill, i) => (
-            <li key={i} className="flex-shrink-0 snap-start">
-              <a
-                href={skill.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative flex items-center justify-center w-52 h-56 rounded-2xl
-                bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800
-                hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all"
-              >
-                <img
-                  src={skill.img}
-                  alt={skill.name}
-                  className="w-32 h-32 object-contain group-hover:scale-125 transition-transform"
-                />
-                <span className="absolute bottom-4 text-sm text-zinc-400 group-hover:text-white">
-                  {skill.name}
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+  <div className="relative w-full overflow-hidden">
+    <ul className="flex gap-6 animate-infinite-scroll">
+      {[...skills, ...skills].map((skill, i) => (
+        <li key={i} className="flex-shrink-0">
+          <a
+            href={skill.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative flex items-center justify-center w-52 h-56 rounded-2xl
+            bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800
+            hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all"
+          >
+            <img
+              src={skill.img}
+              alt={skill.name}
+              className="w-32 h-32 object-contain group-hover:scale-125 transition-transform"
+            />
+            <span className="absolute bottom-4 text-sm text-zinc-400 group-hover:text-white">
+              {skill.name}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
 
 
       {/* KEY ACHIEVEMENTS */}
