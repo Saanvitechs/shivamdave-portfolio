@@ -35,7 +35,7 @@ const TopNavbar = () => {
     <nav className="relative z-40">
       {/* 🔹 Top Bar */}
       <div className="flex items-center justify-between bg-zinc-900 p-3 md:p-4 rounded-bl-2xl rounded-tr-2xl border-b-4 border-l-4 border-zinc-800">
-        <span className="text-white font-semibold md:hidden">Menu</span>
+        {/* <span className="text-white font-semibold md:hidden">M</span> */}
 
         {/* 🔹 Hamburger */}
         <button
