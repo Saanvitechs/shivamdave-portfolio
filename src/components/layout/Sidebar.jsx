@@ -75,7 +75,7 @@ const Sidebar = () => {
                     <InfoItem icon={<Phone size={20} />} label="Phone" value="+91- 9580208231" />
                     <InfoItem icon={<MapPin size={20} />} label="Location" value="Lucknow, India" />
 
-                    <a href="/Shivam_Java fullstack_contract.docx" target="_blank" rel="noopener noreferrer">
+                    <a href="/Shivam_Java fullstack_contract.pdf" target="_blank" rel="noopener noreferrer">
                         <button className="w-full bg-yellow-500 text-black py-3 rounded-lg mt-4 font-semibold hover:bg-yellow-600 transition">
                             Download CV
                         </button>
