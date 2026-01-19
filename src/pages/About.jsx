@@ -1,21 +1,5 @@
 import { Code2, Database, Cloud, GitBranch, Users, Award, TrendingUp, Shield, Target, Rocket, Sparkles, Zap } from 'lucide-react';
-import javaLogo from "../assets/skills/java.png";
-import springLogo from "../assets/skills/Spring_Boot.png";
-import react from "../assets/skills/react.gif";
-import postman from "../assets/skills/postman.png";
-import docker from "../assets/skills/docker.png";
-import aws from "../assets/skills/aws.png";
-import da from '../assets/skills/developer.png';
-import ma from '../assets/skills/microservices.png';
-import sa from '../assets/skills/SA_icon.png';
-import db from '../assets/skills/db_managment.png';
-// import sa from '../assets/skills/SA_icon.png';
-
 import React, { useEffect, useRef } from "react";
-// import postgres from "../assets/skills/postgres.gif";
-// import kafka from "../assets/skills/kafka.gif";
-import kubernetes from "../assets/skills/kubernetes.png";
-
 
 const TechIcon = ({ type }) => {
   const icons = {
@@ -92,31 +76,13 @@ const TechIcon = ({ type }) => {
   return icons[type] || <Code2 className="w-10 h-10 text-slate-400" />;
 };
 
-
-
-const technologies = [
-  { name: 'Java', type: 'java' },
-  { name: 'React', type: 'react' },
-  { name: 'Spring', type: 'spring' },
-  { name: 'Docker', type: 'docker' },
-  { name: 'AWS', type: 'aws' },
-  { name: 'PostgreSQL', type: 'postgres' },
-  { name: 'Kafka', type: 'kafka' },
-  { name: 'Kubernetes', type: 'kubernetes' }
-];
-
 const skills = [
-  {
-    name: "Java",
-    img: javaLogo,
-    link: "https://www.java.com/"
-  },
-  { name: "SpringBoot", img: springLogo, link: "" },
-  { name: "React", img: react, link: "" },
-  { name: "Postman", img: postman, link: "https://www.postman.com/" },
-  { name: "Docker", img: docker, link: "" },
-  { name: "AWS", img: aws, link: "" },
-  { name: "kubernetes", img: kubernetes, link: "" },
+  { name: "Java", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "SpringBoot", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+  { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "AWS", img: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
+  { name: "Kubernetes", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
 ];
 
 const technology = [
@@ -134,7 +100,6 @@ const technology = [
 ];
 
 const About = () => {
-
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -154,7 +119,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="min-h-screen text-slate-100 overflow-hidden">
+    <div className="min-h-screen text-slate-100 overflow-hidden px-4 sm:px-6">
 
       <section className="max-w-6xl mx-auto relative">
         <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
@@ -162,17 +127,17 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl font-bold text-white">
           About <span className="text-yellow-400">Me</span>
         </h1>
-        <div className="relative rounded-3xl ml-8">
+        <div className="relative rounded-3xl ml-0 md:ml-8">
 
           {/* Tagline */}
           <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
-            I’m a Senior Full-Stack Engineer (Java + React) with{" "}
+            I'm a Senior Full-Stack Engineer (Java + React) with{" "}
             <span className="text-white font-semibold">11+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
           </p>
           {/* Content */}
           <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
             <p>
-              Over the years, I’ve contributed to business-critical platforms for global organizations such as <span className="text-blue-400 font-semibold">DHL, Wayfair, Nike, Mizuho, Citi Bank, Bank of America, and Tupperware.</span>  With 4+ years as a Tech Lead, I’ve mentored developers, driven sprint execution, ensured clean code practices, and taken ownership of end-to-end delivery.
+              Over the years, I've contributed to business-critical platforms for global organizations such as <span className="text-blue-400 font-semibold">DHL, Wayfair, Nike, Mizuho, Citi Bank, Bank of America, and Tupperware.</span>  With 4+ years as a Tech Lead, I've mentored developers, driven sprint execution, ensured clean code practices, and taken ownership of end-to-end delivery.
             </p>
 
             <div className="space-y-2">
@@ -195,7 +160,7 @@ const About = () => {
             </div>
 
             <p>
-              As a Tech Lead, I’ve led teams, mentored engineers, and successfully
+              As a Tech Lead, I've led teams, mentored engineers, and successfully
               delivered projects in{" "}
               <span className="text-white font-medium">
                 Agile and distributed offshore models
@@ -207,41 +172,40 @@ const About = () => {
       </section>
 
 
-      <section className="max-w-6xl mx-auto px-8 py-16">
+      <section className="max-w-6xl mx-auto px-0 md:px-8 py-16">
         <h3 className="text-3xl font-bold text-white mb-12">
-          What <span className="text-yellow-400">I’m Doing</span>
+          What <span className="text-yellow-400">I'm Doing</span>
         </h3>
 
-        <ul className="grid sm:grid-cols-2 gap-8">
+        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {[
             {
               title: "Java Full-Stack Developer",
               text: "High-quality, scalable websites built at a professional level.",
-              icon: da,
+              icon: "💻",
             },
             {
               title: "Backend Architect",
               text: "Professional development of Android and iOS applications.",
-              icon: sa,
+              icon: "🏗️",
             },
             {
               title: "System Design & Microservices",
               text: "Modern, intuitive designs focused on user experience.",
-              icon: ma,
+              icon: "⚙️",
             },
             {
               title: "DataBase Management",
               text: "Efficient and secure database design, optimization, and management for scalable applications.",
-              icon: db,
+              icon: "🗄️",
             },
-
           ].map((service, i) => (
             <li
               key={i}
               className="flex gap-5 bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-yellow-400/40 transition"
             >
-              <div className="shrink-0">
-                <img src={service.icon} alt={service.title} width="40" />
+              <div className="shrink-0 text-4xl">
+                {service.icon}
               </div>
 
               <div>
@@ -258,14 +222,14 @@ const About = () => {
       </section>
 
       {/* EXPERIENCE HIGHLIGHTS */}
-      <section className="max-w-6xl mx-auto px-6 py-16 border-t border-zinc-800">
+      <section className="max-w-6xl mx-auto px-0 md:px-6 py-16 border-t border-zinc-800">
         {/* Section Heading */}
         <h2 className="text-3xl font-bold text-white mb-12">
           Experience <span className="text-blue-400">Highlights</span>
         </h2>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
           {[
             {
               icon: <TrendingUp className="w-6 h-6" />,
@@ -313,41 +277,35 @@ const About = () => {
       </section>
 
       {/*Skill icon Scroller  */}
+      <section className="max-w-6xl mx-auto px-0 md:px-6 py-16 overflow-hidden">
+        <h3 className="text-4xl font-bold text-white mb-5">Skills</h3>
 
-      <section className="max-w-6xl mx-auto px-6 py-16 overflow-hidden">
-  <h3 className="text-4xl font-bold text-white mb-5">Skills</h3>
-
-  <div className="relative w-full overflow-hidden">
-    <ul className="flex gap-6 animate-infinite-scroll">
-      {[...skills, ...skills].map((skill, i) => (
-        <li key={i} className="flex-shrink-0">
-          <a
-            href={skill.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative flex items-center justify-center w-52 h-56 rounded-2xl
-            bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800
-            hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all"
-          >
-            <img
-              src={skill.img}
-              alt={skill.name}
-              className="w-32 h-32 object-contain group-hover:scale-125 transition-transform"
-            />
-            <span className="absolute bottom-4 text-sm text-zinc-400 group-hover:text-white">
-              {skill.name}
-            </span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</section>
-
-
+        <div className="relative w-full overflow-hidden">
+          <ul className="flex gap-6 animate-infinite-scroll">
+            {[...skills, ...skills].map((skill, i) => (
+              <li key={i} className="flex-shrink-0">
+                <div
+                  className="group relative flex items-center justify-center w-52 h-56 rounded-2xl
+                  bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800
+                  hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all"
+                >
+                  <img
+                    src={skill.img}
+                    alt={skill.name}
+                    className="w-32 h-32 object-contain group-hover:scale-125 transition-transform"
+                  />
+                  <span className="absolute bottom-4 text-sm text-zinc-400 group-hover:text-white">
+                    {skill.name}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
 
       {/* KEY ACHIEVEMENTS */}
-      <section className="max-w-6xl mx-auto px-6 py-10 border-t border-slate-800">
+      <section className="max-w-6xl mx-auto px-0 md:px-6 py-10 border-t border-slate-800">
         <h2 className="text-2xl font-bold mb-8 text-white">Key Achievements</h2>
 
         <div className="space-y-4">
@@ -367,7 +325,7 @@ const About = () => {
       </section>
 
       {/* CTA */}
-      <section className="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800">
+      <section className="max-w-6xl mx-auto px-0 md:px-6 py-16 border-t border-slate-800">
         <div className="bg-slate-900 border border-slate-800 p-10 text-center">
           <h2 className="text-2xl font-bold mb-4 text-white">
             Let's Build Something Great Together
@@ -385,6 +343,19 @@ const About = () => {
         </div>
       </section>
 
+      <style jsx>{`
+        @keyframes infinite-scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-infinite-scroll {
+          animation: infinite-scroll 20s linear infinite;
+        }
+      `}</style>
     </div>
   );
 };

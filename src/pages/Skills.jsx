@@ -91,12 +91,12 @@ const skills = {
 
 const Skills = () => {
   return (
-    <div className="min-h-screen text-white px-24 pt-2 pb-32 max-w-7xl mx-auto">
+    <div className="min-h-screen text-white px-4 sm:px-8 md:px-12 lg:px-24 pt-2 pb-24 sm:pb-32 max-w-7xl mx-auto">
       
       {/* HEADER */}
-      <section className="mb-16">
+      <section className="mb-12 sm:mb-16">
         <h1 className="text-4xl md:text-5xl font-bold">Skills</h1>
-        <p className="text-gray-400 mt-4 max-w-3xl text-lg">
+        <p className="text-gray-400 mt-4 max-w-3xl text-base sm:text-lg">
           A comprehensive overview of technologies, tools, and leadership
           capabilities gained over 12+ years of building enterprise-grade
           software across banking, payments, e-commerce, travel, and logistics.
@@ -104,19 +104,19 @@ const Skills = () => {
       </section>
 
       {/* SKILLS GRID */}
-      <section className="grid md:grid-cols-2 gap-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
         {Object.entries(skills).map(([category, items]) => (
           <div
             key={category}
-            className="border border-white/10 rounded-2xl p-8 hover:border-white/20 transition"
+            className="border border-white/10 rounded-2xl p-6 sm:p-8 hover:border-white/20 transition"
           >
-            <h2 className="text-xl font-semibold mb-6">{category}</h2>
+            <h2 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">{category}</h2>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {items.map((skill, index) => (
                 <span
                   key={index}
-                  className="px-4 py-2 rounded-full text-sm bg-white/10 text-gray-300"
+                  className="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm bg-white/10 text-gray-300"
                 >
                   {skill}
                 </span>
