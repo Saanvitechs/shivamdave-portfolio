@@ -1,226 +1,42 @@
 const projects = [
   {
-    title: "Advanced Platform",
-    client: "Bank of America, USA",
-    duration: "Apr 2015 – Oct 2017",
-    team: "6 Members",
-    role: "Java Developer",
-    description:
-      "Enterprise platform for displaying filtered financial rates with secure file exchange using MIME protocol.",
-    highlights: [
-      "Verified and documented project requirements & business specs",
-      "Developed POJO and business layer components",
-      "Implemented file encryption & decryption modules",
-      "Maintained production stability and performance",
-    ],
-    tech: [
-      "Core Java",
-      "Spring",
-      "Hibernate",
-      "JSP",
-      "JavaScript",
-      "WebLogic",
-      "Maven",
-      "Gradle",
-    ],
-  },
-
-  {
-    title: "Eclipse System Management Service (ESMS)",
-    client: "Citi Bank, Malaysia",
-    duration: "Oct 2017 – Jul 2019",
-    team: "2 Members",
-    role: "Backend Engineer",
-    description:
-      "Ticket and request tracking system for Citi Bank customers related to cards and accounts.",
-    highlights: [
-      "Developed backend services for ESMS",
-      "Resolved QC issues and production bugs",
-      "Handled BAU & OPPM support activities",
-      "Maintained CI/CD pipelines with Jenkins",
-    ],
-    tech: [
-      "Core Java",
-      "Spring Boot",
-      "Microservices",
-      "JSP",
-      "Apache Tomcat",
-      "Linux",
-      "Jenkins",
-    ],
-  },
-
-  {
-    title: "IBM HCL Maximo Reporting Tool",
-    client: "IBM",
-    duration: "Jul 2019 – Feb 2020",
-    team: "2 Members",
-    role: "Frontend Engineer",
-    description:
-      "Custom reporting tool for workforce accounting in IBM Maximo.",
-    highlights: [
-      "Built report creation features in React",
-      "Collaborated with IBM Maximo team",
-      "Fixed bugs in Maximo application",
-    ],
-    tech: ["React.js", "JavaScript", "ES6", "jQuery", "HTML", "CSS"],
-  },
-
-  {
-    title: "British Airways Portal",
-    client: "British Airways",
-    duration: "Mar 2020 – Jun 2020",
-    team: "5 Members",
-    role: "Full Stack Developer",
-    description:
-      "Microservices and frontend development for airline ticket booking platform.",
-    highlights: [
-      "Developed backend APIs using Spring Boot",
-      "Worked on multiple user stories",
-      "Applied JUnit & Test Driven Development",
-    ],
-    tech: [
-      "Spring Boot",
-      "Spring MVC",
-      "Microservices",
-      "JUnit",
-      "React.js",
-      "Apache Kafka",
-    ],
-  },
-
-  {
-    title: "Open Payment Framework",
-    client: "Mizuho Europe",
-    duration: "Jun 2020 – Sep 2021",
-    team: "5 Members",
-    role: "Tech Lead",
-    description:
-      "Payment processing framework for multiple financial institutions using FIS OPF.",
-    highlights: [
-      "Led a team of 3 engineers",
-      "Enhanced Struts-based APIs",
-      "Performed root cause analysis & fixes",
-      "Modernized legacy architecture",
-    ],
-    tech: [
-      "Core Java",
-      "Struts",
-      "Spring",
-      "Kafka",
-      "Docker",
-      "Azure DevOps",
-      "Angular 8",
-    ],
-  },
-
-  {
     title: "Nike Teams Platform",
     client: "Nike US",
     duration: "Nov 2021 – May 2022",
     team: "5 Members",
-    role: "Tech Lead",
+    role: "Senior Software Engineer",
     description:
-      "Platform for bulk custom uniform creation with backend APIs and React frontend.",
+      "Platform for bulk custom uniform creation.",
     highlights: [
-      "Led team of 4 engineers",
-      "Developed backend & frontend features",
-      "Handled deployment & environments",
+      "Developed new features for uniform ordering workflows",
+      "Implemented backend and frontend enhancements",
+      "Supported environment setup and deployments",
+      "Contributed to team execution and planning",
     ],
     tech: [
-      "Spring Boot",
-      "React.js",
-      "Kafka",
-      "Docker",
-      "Azure DevOps",
+      "Java", "Spring Boot", "Struts MVC", "React.js", "Apache Kafka",
+      "Microservices", "Hibernate", "Docker", "HTML", "CSS",
     ],
   },
 
   {
-    title: "Interswitch Payment Gateway",
-    client: "Interswitch, South Africa",
-    duration: "May 2022 – Oct 2022",
-    team: "5 Members",
-    role: "Tech Lead",
+    title: "LGI Portal",
+    client: "LGI",
+    duration: "May 2025 – December 2025",
+    team: "6 Members",
+    role: "Senior Software Engineer / Tech Lead",
     description:
-      "Quickteller payment application for bill payments and transfers.",
+      "Enterprise-grade portal with scalable Spring Boot microservices and a modern React-based frontend.",
     highlights: [
-      "Developed Java APIs",
-      "Mentored team of 4 engineers",
-      "Enhanced payment workflows",
+      "Developed and enhanced Spring Boot REST APIs with clean, scalable architecture",
+      "Built and improved React.js UI components/pages with smooth backend integration",
+      "Handled end-to-end user stories from requirements to deployment readiness",
+      "Led sprint delivery and mentored team members to ensure code quality and timelines",
     ],
     tech: [
-      "Spring Boot",
-      "Kafka",
-      "AWS",
-      "React.js",
-      "PostgreSQL",
-    ],
-  },
-
-  {
-    title: "Tupperware Portal",
-    client: "Tupperware, Australia",
-    duration: "Oct 2022 – May 2023",
-    team: "3 Members",
-    role: "Tech Lead",
-    description:
-      "E-commerce portal for product purchases across Australia.",
-    highlights: [
-      "Developed backend features",
-      "Mentored junior developers",
-      "Enhanced user flows",
-    ],
-    tech: [
-      "Spring Boot",
-      "Kafka",
-      "React.js",
-      "Azure Kubernetes",
-      "Playwright",
-    ],
-  },
-
-  {
-    title: "East West Bank Portal",
-    client: "East West Bank",
-    duration: "May 2023 – Oct 2023",
-    team: "5 Members",
-    role: "Tech Lead",
-    description:
-      "Banking portal with production monitoring and feature enhancements.",
-    highlights: [
-      "Handled production incidents",
-      "Worked on blockchain integrations",
-      "Led 4-member team",
-    ],
-    tech: [
-      "Spring Boot",
-      "Kafka",
-      "Blockchain",
-      "React.js",
-      "Azure DevOps",
-    ],
-  },
-
-  {
-    title: "Wayfair Portal",
-    client: "Wayfair",
-    duration: "Nov 2023 – Nov 2024",
-    team: "8 Members",
-    role: "Tech Lead",
-    description:
-      "Enterprise portal with scalable backend APIs and modern frontend views.",
-    highlights: [
-      "Led team of 8 engineers",
-      "Designed backend architecture",
-      "Ensured delivery & code quality",
-    ],
-    tech: [
-      "Spring Boot",
-      "Kafka",
-      "React.js",
-      "Azure Kubernetes",
-      "PostgreSQL",
+      "Java", "Spring Boot", "Spring MVC", "Microservices", "React.js",
+      "Apache Kafka", "Node.js", "Docker", "Azure DevOps", "PostgreSQL",
+      "HTML5", "CSS3",
     ],
   },
 
@@ -229,42 +45,198 @@ const projects = [
     client: "DHL",
     duration: "Nov 2024 – Apr 2025",
     team: "8 Members",
-    role: "Tech Lead",
+    role: "Senior Software Engineer / Tech Lead",
     description:
       "Logistics delivery management system with real-time workflow enhancements.",
     highlights: [
-      "Developed backend APIs",
-      "Groomed user stories",
-      "Planned architecture & flows",
+      "Developed backend services for delivery workflows using Java + Spring Boot",
+      "Delivered sprint work items across backend APIs and frontend pages",
+      "Led story grooming and implementation planning",
+      "Maintained delivery quality and supported smooth releases as Tech Lead",
     ],
     tech: [
-      "Spring Boot",
-      "Kafka",
-      "React.js",
-      "Docker",
-      "PlantUML",
+      "Java", "Spring Boot", "Microservices", "React.js", "Apache Kafka",
+      "Node.js", "Docker", "Azure DevOps", "Swagger", "PostgreSQL",
+      "HTML5", "CSS3",
     ],
   },
 
   {
-    title: "LGI Portal",
-    client: "LGI",
-    duration: "May 2025 – Present",
-    team: "6 Members",
-    role: "Tech Lead",
+    title: "Wayfair Portal",
+    client: "Wayfair",
+    duration: "Nov 2023 – Nov 2024",
+    team: "8 Members",
+    role: "Senior Software Engineer / Tech Lead",
     description:
-      "Enterprise portal with modern backend & React-based frontend.",
+      "Confidential enterprise portal with scalable backend APIs and modern frontend views.",
     highlights: [
-      "Developed Java & React features",
-      "Led 8-member team",
-      "Enhanced system performance",
+      "Led backend + frontend delivery for enterprise portal",
+      "Designed Spring Boot REST APIs for business-critical modules",
+      "Handled production support and deployments",
+      "Ensured consistent sprint outcomes as Tech Lead",
     ],
     tech: [
-      "Spring Boot",
-      "Kafka",
-      "React.js",
-      "AWS",
-      "Microservices",
+      "Java", "Spring Boot", "Spring MVC", "Microservices", "React.js",
+      "Apache Kafka", "Docker", "Azure DevOps", "PostgreSQL",
+      "HTML5", "CSS3",
+    ],
+  },
+
+  {
+    title: "East West Bank Portal",
+    client: "East West Bank",
+    duration: "Jun 2023 – Oct 2023",
+    team: "5 Members",
+    role: "Senior Software Engineer / Tech Lead",
+    description:
+      "Banking portal with production monitoring and feature enhancements.",
+    highlights: [
+      "Monitored production systems and resolved defects",
+      "Delivered backend APIs and frontend enhancements",
+      "Worked on user stories end-to-end",
+      "Led team and ensured timely delivery",
+    ],
+    tech: [
+      "Java", "Spring Boot", "Spring MVC", "React.js", "Node.js",
+      "Apache Kafka", "Docker", "Azure DevOps", "PostgreSQL",
+      "HTML5", "CSS3",
+    ],
+  },
+
+  {
+    title: "Tupperware Portal",
+    client: "Tupperware Australia",
+    duration: "Oct 2022 – Jun 2023",
+    team: "3 Members",
+    role: "Senior Software Engineer",
+    description:
+      "E-commerce portal for product purchases across Australia.",
+    highlights: [
+      "Developed backend functionality for ecommerce portal",
+      "Implemented enhancements across APIs and frontend pages",
+      "Mentored junior developers",
+      "Worked on Kafka-based event-driven integrations",
+    ],
+    tech: [
+      "Java", "Spring Boot", "Spring MVC", "Struts", "React.js",
+      "Apache Kafka", "Microservices", "Hibernate", "Docker",
+      "HTML5", "CSS3",
+    ],
+  },
+
+  {
+    title: "Interswitch Payment Gateway",
+    client: "Interswitch, South Africa",
+    duration: "May 2022 – Oct 2022",
+    team: "5 Members",
+    role: "Senior Software Engineer / Tech Lead",
+    description:
+      "Quickteller payment application for bill payments and transfers.",
+    highlights: [
+      "Developed backend APIs for payment workflows",
+      "Worked on backend + frontend enhancements",
+      "Mentored 4 engineers and ensured sprint delivery",
+      "Built stable, scalable payment services",
+    ],
+    tech: [
+      "Java", "Spring Boot", "Spring MVC", "React.js", "Apache Kafka",
+      "Microservices", "AWS", "Docker", "PostgreSQL",
+      "HTML5", "CSS3",
+    ],
+  },
+
+  
+
+  {
+    title: "Open Payment Framework",
+    client: "Mizuho Europe",
+    duration: "Jun 2020 – Sep 2021",
+    team: "5 Members",
+    role: "Technical Specialist / Tech Lead",
+    description:
+      "Payment processing framework for multiple financial institutions.",
+    highlights: [
+      "Enhanced Java APIs and Struts-based services",
+      "Performed root cause analysis and production fixes",
+      "Led team delivery and ensured code quality",
+      "Worked in Agile delivery with cross-team collaboration",
+    ],
+    tech: [
+      "Java", "Struts MVC", "Spring Framework", "Microservices",
+      "Apache Kafka", "Hibernate", "Docker", "Azure DevOps",
+      "GraphQL", "HTML", "CSS",
+    ],
+  },
+
+  {
+    title: "British Airways Portal",
+    client: "British Airways",
+    duration: "Mar 2020 – Jun 2020",
+    team: "5 Members",
+    role: "Senior Software Engineer",
+    description:
+      "Airline ticket booking platform enhancements.",
+    highlights: [
+      "Developed backend APIs with Spring Boot",
+      "Applied JUnit and TDD practices",
+    ],
+    tech: [
+      "Java", "Spring Boot", "Microservices", "JUnit", "React.js",
+    ],
+  },
+
+  {
+    title: "IBM Reporting Tool",
+    client: "IBM",
+    duration: "Jul 2019 – Feb 2020",
+    team: "2 Members",
+    role: "Software Engineer",
+    description:
+      "Custom reporting tool for workforce accounting.",
+    highlights: [
+      "Built reporting modules in React",
+      "Fixed application defects",
+    ],
+    tech: [
+      "React.js", "JavaScript", "ES6", "jQuery", "HTML", "CSS", "Git",
+    ],
+  },
+
+  {
+    title: "ESMS Application",
+    client: "Citi Bank, Malaysia",
+    duration: "Oct 2017 – Jul 2019",
+    team: "2 Members",
+    role: "Software Engineer",
+    description:
+      "Customer request tracking system for cards and accounts.",
+    highlights: [
+      "Developed backend functionality",
+      "Handled QC fixes and BAU/OPPM support",
+      "Worked end-to-end on delivery",
+    ],
+    tech: [
+      "Core Java", "Spring Boot", "Spring Framework", "Microservices",
+      "JavaScript", "Apache Tomcat", "HTML", "CSS", "Linux", "Jenkins",
+    ],
+  },
+
+  {
+    title: "Advanced Platform",
+    client: "Bank of America, USA",
+    duration: "Apr 2015 – Oct 2017",
+    team: "6 Members",
+    role: "Software Engineer",
+    description:
+      "Enterprise platform for displaying filtered financial rates with secure file exchange.",
+    highlights: [
+      "Verified requirements and prepared documentation",
+      "Developed POJO and business layer components",
+      "Implemented MIME encryption & decryption logic",
+    ],
+    tech: [
+      "Core Java", "Spring Framework", "Hibernate", "JavaScript",
+      "JSP", "WebLogic Server", "HTML", "CSS",
     ],
   },
 ];
@@ -275,7 +247,7 @@ const Work = () => {
       {/* Header */}
       <div className="mb-16 sm:mb-20 md:mb-24 relative">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 bg-gradient-to-r from-white via-blue-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
-          My <span className="text-yellow-400">Work</span> 
+          My <span className="text-yellow-400">Work</span>
         </h1>
 
         <p className="text-gray-400 max-w-3xl text-base sm:text-lg md:text-xl leading-relaxed">
@@ -296,26 +268,36 @@ const Work = () => {
             <div className="absolute inset-0 rounded-2xl sm:rounded-3xl opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 pointer-events-none" />
 
             <div className="relative z-10">
-              <div className="flex flex-col gap-2 sm:gap-3 mb-3 sm:mb-4">
+              {/* Header */}
+              <div className="flex flex-col gap-1 sm:gap-2 mb-3 sm:mb-4">
                 <h2 className="text-xl sm:text-2xl font-semibold">{p.title}</h2>
-                <span className="text-xs sm:text-sm text-[#FFDB70]">{p.duration}</span>
+                {/* <span className="text-xs sm:text-sm text-[#FFDB70]">{p.duration}</span> */}
               </div>
 
+              {/* Meta */}
               <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4">
-                <span className="text-blue-500 font-bold text-xl sm:text-2xl">{p.client}</span> •{" "}
+                <span className="text-blue-500 font-semibold">{p.client}</span> •{" "}
                 {p.role} • Team: {p.team}
               </p>
 
+              {/* Description */}
               <p className="text-sm sm:text-base text-gray-400 mb-4 sm:mb-6 leading-relaxed">
                 {p.description}
               </p>
 
-              <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-400 mb-4 sm:mb-6 list-disc list-inside">
-                {p.highlights.map((h, idx) => (
-                  <li key={idx}>{h}</li>
-                ))}
-              </ul>
+              {/* What I Did / Highlights */}
+              <div className="mb-4 sm:mb-6">
+                <h4 className="text-sm sm:text-base font-semibold text-[#FFDB70] mb-2">
+                  What I Did (Key Responsibilities & Impact)
+                </h4>
+                <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-gray-400 list-disc list-inside">
+                  {p.highlights.map((h, idx) => (
+                    <li key={idx}>{h}</li>
+                  ))}
+                </ul>
+              </div>
 
+              {/* Tech Stack */}
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {p.tech.map((t, idx) => (
                   <span
@@ -330,6 +312,7 @@ const Work = () => {
           </div>
         ))}
       </div>
+
     </div>
   );
 };

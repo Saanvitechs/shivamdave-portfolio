@@ -35,7 +35,6 @@ const TopNavbar = () => {
     <nav className="relative z-40">
       {/* 🔹 Top Bar */}
       <div className="flex items-center justify-between bg-zinc-900 p-3 md:p-4 rounded-bl-2xl rounded-tr-2xl border-b-4 border-l-4 border-zinc-800">
-        {/* <span className="text-white font-semibold md:hidden">M</span> */}
 
         {/* 🔹 Hamburger */}
         <button
@@ -47,15 +46,19 @@ const TopNavbar = () => {
 
         {/* 🔹 Desktop Menu */}
         <div className="hidden md:flex gap-2 items-center justify-end w-full">
-          <a href="#about" className={navItem("about")}>About</a>
-          <a href="#projects" className={navItem("projects")}>Works</a>
-          <a href="#skills" className={navItem("skills")}>Skill</a>
-          <a href="#contact" className={navItem("contact")}>Contact</a>
+  <a href="#about" className={navItem("about")}>About</a>
+  <a href="#projects" className={navItem("projects")}>Works</a>
+  <a href="#skills" className={navItem("skills")}>Skill</a>
+  <a href="#contact" className={navItem("contact")}>Contact</a>
 
-          <button className="w-32 bg-yellow-500 text-black text-2xl pb-1 rounded-lg font-semibold hover:bg-yellow-600 transition">
-            Hire Me
-          </button>
-        </div>
+  <a
+    href="#contact"
+    className="w-32 bg-yellow-500 text-black text-2xl pb-1 rounded-lg font-semibold hover:bg-yellow-600 transition text-center"
+  >
+    Hire Me
+  </a>
+</div>
+
       </div>
 
       {/* 🔹 Mobile Dropdown */}
