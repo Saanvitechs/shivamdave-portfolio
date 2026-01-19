@@ -80,9 +80,23 @@ const skills = [
   { name: "Java", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
   { name: "SpringBoot", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
   { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  {name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  {name:"redux", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  {name :"linux", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
   { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
   { name: "AWS", img: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
   { name: "Kubernetes", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "SQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+  { name: "Kafka", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" },
+  {name:"jira", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+  { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "Maven", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
+  { name: "Jenkins", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
+  { name: "HTML5", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS3", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+
 ];
 
 const technology = [
@@ -132,7 +146,7 @@ const About = () => {
           {/* Tagline */}
           <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
             I'm a Senior Full-Stack Engineer (Java + React) with{" "}
-            <span className="text-white font-semibold">11+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
+            <span className="text-white font-semibold">12+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
           </p>
           {/* Content */}
           <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">

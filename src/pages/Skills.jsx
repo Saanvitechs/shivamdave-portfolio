@@ -36,11 +36,21 @@ const skills = {
   ],
 
   "Messaging & Streaming": [
-    "Apache Kafka",
-  ],
+  "Apache Kafka",
+  "RabbitMQ",
+  "Apache Pulsar",
+  "Amazon Kinesis",
+  "Google Pub/Sub"
+],
 
   "Databases": [
     "PostgreSQL",
+    "MySQL",
+    "MariaDB",
+    "Oracle DB",
+    "MongoDB", 
+    "Redis",
+
   ],
 
   "Servers & Containers": [
@@ -50,11 +60,15 @@ const skills = {
   ],
 
   "Build & Version Control": [
-    "Maven",
-    "Gradle",
-    "Git",
-    "Jenkins",
-  ],
+  "Maven",
+  "Gradle",
+  "Git",
+  "GitHub",
+  "GitLab",
+  "Bitbucket",
+  "Jenkins",
+  "GitHub Actions"
+],
 
   "Testing & Quality": [
     "JUnit",
