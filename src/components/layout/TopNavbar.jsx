@@ -47,7 +47,7 @@ const TopNavbar = () => {
         {/* 🔹 Desktop Menu */}
         <div className="hidden md:flex gap-2 items-center justify-end w-full">
   <a href="#about" className={navItem("about")}>About</a>
-  <a href="#projects" className={navItem("projects")}>Works</a>
+  <a href="#projects" className={navItem("projects")}>Projects</a>
   <a href="#skills" className={navItem("skills")}>Skill</a>
   {/* <a href="#contact" className={navItem("contact")}>Contact</a> */}
 

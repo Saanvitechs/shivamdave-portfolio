@@ -80,19 +80,19 @@ const skills = [
   { name: "Java", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
   { name: "SpringBoot", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
   { name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  {name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-  {name:"redux", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
-  {name :"linux", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
+  { name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "redux", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" },
+  { name: "linux", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
   { name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  {name:"azure", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
-  {name:"ci/cd", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" },
-  {name:"GCP", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
+  { name: "azure", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" },
+  { name: "ci/cd", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" },
+  { name: "GCP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
   { name: "AWS", img: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
   { name: "Kubernetes", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
   { name: "SQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
   { name: "Kafka", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" },
-  {name:"jira", img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+  { name: "jira", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
   { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
   { name: "Maven", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" },
   { name: "Jenkins", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
@@ -137,73 +137,73 @@ const About = () => {
     <div className="min-h-screen text-slate-100 overflow-hidden px-4 sm:px-6">
 
       <section className="max-w-6xl mx-auto relative">
-  <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
+        <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
 
-  <h1 className="text-4xl md:text-5xl font-bold text-white">
-    About <span className="text-yellow-400">Me</span>
-  </h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-white">
+          About <span className="text-yellow-400">Me</span>
+        </h1>
 
-  <div className="relative rounded-3xl ml-0 md:ml-8">
-    {/* Tagline */}
-    <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
-      I am a Senior Full-Stack Java Developer / Tech Lead with{" "}
-      <span className="text-white font-semibold">11+ years</span> of experience
-      building and delivering enterprise-grade, multi-tier web applications
-      across Banking, Payments, E-commerce, Logistics, and Travel domains. I
-      specialize in scalable backend systems with Spring Boot & Microservices
-      and modern frontend apps using React.js.
-    </p>
+        <div className="relative rounded-3xl ml-0 md:ml-8">
+          {/* Tagline */}
+          <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+            I am a Senior Full-Stack Java Developer / Tech Lead with{" "}
+            <span className="text-white font-semibold">11+ years</span> of experience
+            building and delivering enterprise-grade, multi-tier web applications
+            across Banking, Payments, E-commerce, Logistics, and Travel domains. I
+            specialize in scalable backend systems with Spring Boot & Microservices
+            and modern frontend apps using React.js.
+          </p>
 
-    {/* Content */}
-    <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
-      <p>
-        I bring strong expertise across the complete{" "}
-        <span className="text-white font-medium">Software Development Life Cycle (SDLC)</span>{" "}
-        including requirement analysis, system design, development, testing,
-        deployment, and production support. I’ve worked in Agile environments
-        with global teams and delivered projects in offshore and distributed
-        models.
-      </p>
+          {/* Content */}
+          <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
+            <p>
+              I bring strong expertise across the complete{" "}
+              <span className="text-white font-medium">Software Development Life Cycle (SDLC)</span>{" "}
+              including requirement analysis, system design, development, testing,
+              deployment, and production support. I’ve worked in Agile environments
+              with global teams and delivered projects in offshore and distributed
+              models.
+            </p>
 
-      <div className="space-y-2">
-        <p className="text-base leading-relaxed flex flex-wrap items-center gap-2">
-          <span className="text-blue-300 text-xl font-semibold flex items-center gap-2">
-            <Sparkles className="w-5 h-5" />
-            Tech Focus:
-          </span>
-          {technology.map((tech, index) => (
-            <span
-              key={index}
-              className="px-2.5 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700 text-sm hover:border-blue-500 hover:text-white transition-all"
-            >
-              {tech}
-            </span>
-          ))}
-        </p>
-      </div>
+            <div className="space-y-2">
+              <p className="text-base leading-relaxed flex flex-wrap items-center gap-2">
+                <span className="text-blue-300 text-xl font-semibold flex items-center gap-2">
+                  <Sparkles className="w-5 h-5" />
+                  Tech Focus:
+                </span>
+                {technology.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-2.5 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700 text-sm hover:border-blue-500 hover:text-white transition-all"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </p>
+            </div>
 
-      <p>
-        With{" "}
-        <span className="text-white font-medium">4+ years as a Tech Lead</span>, I
-        mentor engineers, conduct code reviews, manage sprint delivery, and
-        ensure production-ready releases with clean, maintainable code and
-        performance-focused architecture.
-      </p>
+            <p>
+              With{" "}
+              <span className="text-white font-medium">4+ years as a Tech Lead</span>, I
+              mentor engineers, conduct code reviews, manage sprint delivery, and
+              ensure production-ready releases with clean, maintainable code and
+              performance-focused architecture.
+            </p>
 
-      <p>
-        I’m a quick learner, proactive team player, and highly committed to
-        delivering high-quality, scalable, and long-term stable solutions. My
-        communication skills help me collaborate effectively with clients,
-        stakeholders, and development teams to ensure on-time delivery.
-      </p>
+            <p>
+              I’m a quick learner, proactive team player, and highly committed to
+              delivering high-quality, scalable, and long-term stable solutions. My
+              communication skills help me collaborate effectively with clients,
+              stakeholders, and development teams to ensure on-time delivery.
+            </p>
 
-      <p className="text-white">
-        If you're looking for a reliable developer to build, enhance, or support
-        your application, I’d be happy to collaborate 🤝
-      </p>
-    </div>
-  </div>
-</section>
+            <p className="text-white">
+              If you're looking for a reliable developer to build, enhance, or support
+              your application, I’d be happy to collaborate 🤝
+            </p>
+          </div>
+        </div>
+      </section>
 
 
       <section className="max-w-6xl mx-auto px-0 md:px-8 py-16">
