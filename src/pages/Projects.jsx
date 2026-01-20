@@ -1,21 +1,25 @@
+import { useState } from "react";
+
 const projects = [
+
   {
-    title: "Nike Teams Platform",
-    client: "Nike US",
-    duration: "Nov 2021 – May 2022",
-    team: "5 Members",
-    role: "Senior Software Engineer",
+    title: "DHL Delivery Portal",
+    client: "DHL",
+    duration: "Nov 2024 – Apr 2025",
+    team: "8 Members",
+    role: "Senior Software Engineer / Tech Lead",
     description:
-      "Platform for bulk custom uniform creation.",
+      "Logistics delivery management system with real-time workflow enhancements.",
     highlights: [
-      "Developed new features for uniform ordering workflows",
-      "Implemented backend and frontend enhancements",
-      "Supported environment setup and deployments",
-      "Contributed to team execution and planning",
+      "Developed backend services for delivery workflows using Java + Spring Boot",
+      "Delivered sprint work items across backend APIs and frontend pages",
+      "Led story grooming and implementation planning",
+      "Maintained delivery quality and supported smooth releases as Tech Lead",
     ],
     tech: [
-      "Java", "Spring Boot", "Struts MVC", "React.js", "Apache Kafka",
-      "Microservices", "Hibernate", "Docker", "HTML", "CSS",
+      "Java", "Spring Boot", "Microservices", "React.js", "Apache Kafka",
+      "Node.js", "Docker", "Azure DevOps", "Swagger", "PostgreSQL",
+      "HTML5", "CSS3",
     ],
   },
 
@@ -41,23 +45,22 @@ const projects = [
   },
 
   {
-    title: "DHL Delivery Portal",
-    client: "DHL",
-    duration: "Nov 2024 – Apr 2025",
-    team: "8 Members",
-    role: "Senior Software Engineer / Tech Lead",
+    title: "Nike Teams Platform",
+    client: "Nike US",
+    duration: "Nov 2021 – May 2022",
+    team: "5 Members",
+    role: "Senior Software Engineer",
     description:
-      "Logistics delivery management system with real-time workflow enhancements.",
+      "Platform for bulk custom uniform creation.",
     highlights: [
-      "Developed backend services for delivery workflows using Java + Spring Boot",
-      "Delivered sprint work items across backend APIs and frontend pages",
-      "Led story grooming and implementation planning",
-      "Maintained delivery quality and supported smooth releases as Tech Lead",
+      "Developed new features for uniform ordering workflows",
+      "Implemented backend and frontend enhancements",
+      "Supported environment setup and deployments",
+      "Contributed to team execution and planning",
     ],
     tech: [
-      "Java", "Spring Boot", "Microservices", "React.js", "Apache Kafka",
-      "Node.js", "Docker", "Azure DevOps", "Swagger", "PostgreSQL",
-      "HTML5", "CSS3",
+      "Java", "Spring Boot", "Struts MVC", "React.js", "Apache Kafka",
+      "Microservices", "Hibernate", "Docker", "HTML", "CSS",
     ],
   },
 
@@ -145,7 +148,7 @@ const projects = [
     ],
   },
 
-  
+
 
   {
     title: "Open Payment Framework",
@@ -242,6 +245,38 @@ const projects = [
 ];
 
 const Work = () => {
+  const [activeTechs, setActiveTechs] = useState([]);
+
+  const allTech = [
+    "All",
+    "Java",
+    "Node.js",
+    "Spring Boot",
+    "Spring MVC",
+    "Microservices",
+    "Kafka",
+    "React.js",
+    "Docker",
+    "Swagger",
+    "Hibernate",
+    "Azure DevOps",
+    "PostgreSQL",
+    "AWS",
+  ];
+
+  const filteredProjects =
+    activeTechs.length === 0
+      ? projects
+      : projects.filter((p) =>
+        activeTechs.every((tech) =>
+          p.tech.some((t) =>
+            t.toLowerCase().includes(tech.toLowerCase())
+          )
+        )
+      );
+
+
+
   return (
     <div className="min-h-screen text-white px-4 sm:px-6 md:px-8 lg:px-12 pt-16 sm:pt-20 pb-24 sm:pb-32 max-w-7xl mx-auto">
       {/* Header */}
@@ -257,9 +292,43 @@ const Work = () => {
         </p>
       </div>
 
+      <div className="flex flex-wrap gap-2 mb-10">
+        {allTech.map((tech, i) => {
+          const isActive = activeTechs.includes(tech);
+
+          return (
+            <button
+              key={i}
+              onClick={() => {
+                if (tech === "All") {
+                  setActiveTechs([]);
+                  return;
+                }
+
+                setActiveTechs((prev) =>
+                  prev.includes(tech)
+                    ? prev.filter((t) => t !== tech) // remove
+                    : [...prev, tech] // add
+                );
+              }}
+              className={`px-3 py-1 text-sm rounded-md border transition
+          ${isActive
+                  ? "bg-blue-500 text-white border-blue-500"
+                  : "bg-slate-900 text-slate-300 border-slate-700 hover:border-blue-400 hover:text-white"
+                }`}
+            >
+              {tech}
+            </button>
+          );
+        })}
+      </div>
+
+
+
+
       {/* Grid */}
       <div className="grid gap-6 sm:gap-8 md:gap-10 grid-cols-1 lg:grid-cols-2">
-        {projects.map((p, i) => (
+        {filteredProjects.map((p, i) => (
           <div
             key={i}
             className="group relative rounded-2xl sm:rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 sm:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20 hover:border-blue-500/40"
