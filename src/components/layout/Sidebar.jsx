@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, X } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, MessageCircle,X } from "lucide-react";
 // import profile from "../../assets/skills/aws.png"; // adjust path
 
 const Sidebar = () => {
@@ -71,7 +71,7 @@ const Sidebar = () => {
                 <div className="w-full h-px bg-zinc-800 my-4"></div>
 
                 <div className="w-full space-y-5">
-                    <InfoItem icon={<Mail size={20} />} label="Email" value="shivamdave@gmail.com" />
+                    <InfoItem icon={<Mail size={20} />} label="Email" value="Shivam.dave2591@gmail.com" />
                     <InfoItem icon={<Phone size={20} />} label="Phone" value="+91- 9580208231" />
                     <InfoItem icon={<MapPin size={20} />} label="Location" value="Lucknow, India" />
 
@@ -87,7 +87,9 @@ const Sidebar = () => {
                 <div className="flex gap-3 mt-8">
                     <IconBox><Linkedin size={20} /></IconBox>
                     <IconBox><Github size={20} /></IconBox>
+                    <IconBox><MessageCircle size={20} />  </IconBox>
                     <IconBox><Twitter size={20} /></IconBox>
+
                 </div>
             </aside>
         </>

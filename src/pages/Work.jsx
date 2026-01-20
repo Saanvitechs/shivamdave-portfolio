@@ -253,7 +253,7 @@ const Work = () => {
         <p className="text-gray-400 max-w-3xl text-base sm:text-lg md:text-xl leading-relaxed">
           A selection of enterprise platforms and products I've built and led across
           banking, payments, e-commerce, travel, and logistics over{" "}
-          <span className="text-white font-medium">12+ years</span>.
+          <span className="text-white font-medium">11+ years</span>.
         </p>
       </div>
 

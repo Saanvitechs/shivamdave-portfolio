@@ -112,7 +112,7 @@ const Skills = () => {
         <h1 className="text-4xl md:text-5xl font-bold">Skills</h1>
         <p className="text-gray-400 mt-4 max-w-3xl text-base sm:text-lg">
           A comprehensive overview of technologies, tools, and leadership
-          capabilities gained over 12+ years of building enterprise-grade
+          capabilities gained over 11+ years of building enterprise-grade
           software across banking, payments, e-commerce, travel, and logistics.
         </p>
       </section>

@@ -34,7 +34,7 @@ const TopNavbar = () => {
   return (
     <nav className="relative z-40">
       {/* 🔹 Top Bar */}
-      <div className="flex items-center justify-between bg-zinc-900 p-3 md:p-4 rounded-bl-2xl rounded-tr-2xl border-b-4 border-l-4 border-zinc-800">
+      <div className="flex items-center justify-between bg-zinc-900 p-3 md:p-4  border-zinc-800">
 
         {/* 🔹 Hamburger */}
         <button
@@ -49,13 +49,13 @@ const TopNavbar = () => {
   <a href="#about" className={navItem("about")}>About</a>
   <a href="#projects" className={navItem("projects")}>Works</a>
   <a href="#skills" className={navItem("skills")}>Skill</a>
-  <a href="#contact" className={navItem("contact")}>Contact</a>
+  {/* <a href="#contact" className={navItem("contact")}>Contact</a> */}
 
   <a
     href="#contact"
     className="w-32 bg-yellow-500 text-black text-2xl pb-1 rounded-lg font-semibold hover:bg-yellow-600 transition text-center"
   >
-    Hire Me
+   Contact Us
   </a>
 </div>
 
@@ -67,10 +67,10 @@ const TopNavbar = () => {
           <a onClick={() => setOpen(false)} href="#about" className={navItem("about")}>About</a>
           <a onClick={() => setOpen(false)} href="#projects" className={navItem("projects")}>Works</a>
           <a onClick={() => setOpen(false)} href="#skills" className={navItem("skills")}>Skill</a>
-          <a onClick={() => setOpen(false)} href="#contact" className={navItem("contact")}>Contact</a>
+          {/* <a onClick={() => setOpen(false)} href="#contact" className={navItem("contact")}>Contact</a> */}
 
           <button className="w-full mt-2 bg-yellow-500 text-black py-2 rounded-lg font-semibold hover:bg-yellow-600 transition">
-            Hire Me
+            Contact Us
           </button>
         </div>
       )}

@@ -54,9 +54,9 @@ const Contact = () => {
             </div>
 
             <div className="space-y-4 md:space-y-6">
-              <ContactItem icon={<Mail size={20} />} label="Email" value="your@email.com" />
+              <ContactItem icon={<Mail size={20} />} label="Email" value="Shivam.dave2591@gmail.com" />
               <ContactItem icon={<Phone size={20} />} label="Phone" value="+91 9580208231" />
-              <ContactItem icon={<MapPin size={20} />} label="Location" value="India (Open to Remote & Hybrid)" />
+              <ContactItem icon={<MapPin size={20} />} label="Location" value="India (Open for Remote Work)" />
             </div>
           </div>
 

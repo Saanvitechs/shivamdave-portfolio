@@ -147,7 +147,7 @@ const About = () => {
           {/* Tagline */}
           <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
             I'm a Senior Full-Stack Engineer (Java + React) with{" "}
-            <span className="text-white font-semibold">12+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
+            <span className="text-white font-semibold">11+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
           </p>
           {/* Content */}
           <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
