@@ -137,54 +137,73 @@ const About = () => {
     <div className="min-h-screen text-slate-100 overflow-hidden px-4 sm:px-6">
 
       <section className="max-w-6xl mx-auto relative">
-        <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
+  <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
-          About <span className="text-yellow-400">Me</span>
-        </h1>
-        <div className="relative rounded-3xl ml-0 md:ml-8">
+  <h1 className="text-4xl md:text-5xl font-bold text-white">
+    About <span className="text-yellow-400">Me</span>
+  </h1>
 
-          {/* Tagline */}
-          <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
-            I'm a Senior Full-Stack Engineer (Java + React) with{" "}
-            <span className="text-white font-semibold">11+ years</span> years of experience building scalable enterprise platforms. My core strength is designing and developing Spring Boot microservices, integrating systems using REST APIs and Apache Kafka, and delivering responsive UI experiences using React.js.
-          </p>
-          {/* Content */}
-          <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
-            <p>
-              Over the years, I've contributed to business-critical platforms for global organizations such as <span className="text-blue-400 font-semibold">DHL, Wayfair, Nike, Mizuho, Citi Bank, Bank of America, and Tupperware.</span>  With 4+ years as a Tech Lead, I've mentored developers, driven sprint execution, ensured clean code practices, and taken ownership of end-to-end delivery.
-            </p>
+  <div className="relative rounded-3xl ml-0 md:ml-8">
+    {/* Tagline */}
+    <p className="mt-6 max-w-3xl text-lg md:text-xl text-zinc-300 leading-relaxed">
+      I am a Senior Full-Stack Java Developer / Tech Lead with{" "}
+      <span className="text-white font-semibold">11+ years</span> of experience
+      building and delivering enterprise-grade, multi-tier web applications
+      across Banking, Payments, E-commerce, Logistics, and Travel domains. I
+      specialize in scalable backend systems with Spring Boot & Microservices
+      and modern frontend apps using React.js.
+    </p>
 
-            <div className="space-y-2">
-              <div className="">
-                <p className="text-base leading-relaxed flex flex-wrap items-center gap-2">
-                  <span className="text-blue-300 text-xl font-semibold flex items-center gap-2">
-                    <Sparkles className="w-5 h-5" />
-                    Tech Focus:
-                  </span>
-                  {technology.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-2.5 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700 text-sm hover:border-blue-500 hover:text-white transition-all"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </p>
-              </div>
-            </div>
+    {/* Content */}
+    <div className="space-y-5 text-zinc-300 mt-4 text-lg leading-relaxed max-w-4xl">
+      <p>
+        I bring strong expertise across the complete{" "}
+        <span className="text-white font-medium">Software Development Life Cycle (SDLC)</span>{" "}
+        including requirement analysis, system design, development, testing,
+        deployment, and production support. I’ve worked in Agile environments
+        with global teams and delivered projects in offshore and distributed
+        models.
+      </p>
 
-            <p>
-              As a Tech Lead, I've led teams, mentored engineers, and successfully
-              delivered projects in{" "}
-              <span className="text-white font-medium">
-                Agile and distributed offshore models
-              </span>,
-              ensuring quality, scalability, and long-term maintainability.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="space-y-2">
+        <p className="text-base leading-relaxed flex flex-wrap items-center gap-2">
+          <span className="text-blue-300 text-xl font-semibold flex items-center gap-2">
+            <Sparkles className="w-5 h-5" />
+            Tech Focus:
+          </span>
+          {technology.map((tech, index) => (
+            <span
+              key={index}
+              className="px-2.5 py-0.5 bg-slate-800 text-slate-300 rounded border border-slate-700 text-sm hover:border-blue-500 hover:text-white transition-all"
+            >
+              {tech}
+            </span>
+          ))}
+        </p>
+      </div>
+
+      <p>
+        With{" "}
+        <span className="text-white font-medium">4+ years as a Tech Lead</span>, I
+        mentor engineers, conduct code reviews, manage sprint delivery, and
+        ensure production-ready releases with clean, maintainable code and
+        performance-focused architecture.
+      </p>
+
+      <p>
+        I’m a quick learner, proactive team player, and highly committed to
+        delivering high-quality, scalable, and long-term stable solutions. My
+        communication skills help me collaborate effectively with clients,
+        stakeholders, and development teams to ensure on-time delivery.
+      </p>
+
+      <p className="text-white">
+        If you're looking for a reliable developer to build, enhance, or support
+        your application, I’d be happy to collaborate 🤝
+      </p>
+    </div>
+  </div>
+</section>
 
 
       <section className="max-w-6xl mx-auto px-0 md:px-8 py-16">

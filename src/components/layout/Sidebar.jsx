@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, MessageCircle,X } from "lucide-react";
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, MessageCircle, X } from "lucide-react";
 // import profile from "../../assets/skills/aws.png"; // adjust path
 
 const Sidebar = () => {
@@ -85,10 +85,30 @@ const Sidebar = () => {
                 </div>
 
                 <div className="flex gap-3 mt-8">
-                    <IconBox><Linkedin size={20} /></IconBox>
-                    <IconBox><Github size={20} /></IconBox>
-                    <IconBox><MessageCircle size={20} />  </IconBox>
-                    <IconBox><Twitter size={20} /></IconBox>
+                    {/* <IconBox><Linkedin size={20} /></IconBox> */}
+                    <a
+                        href="https://github.com/Saanvitechs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer"
+                    >
+                        <IconBox>
+                            <Github size={20} />
+                        </IconBox>
+                    </a>
+                    <a
+                        href="https://wa.me/919580208231"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cursor-pointer"
+                    >
+                        <IconBox>
+                            <MessageCircle size={20} />
+                        </IconBox>
+                    </a>
+
+
+                    {/* <IconBox><Twitter size={20} /></IconBox> */}
 
                 </div>
             </aside>
