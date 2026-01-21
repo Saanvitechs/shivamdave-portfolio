@@ -348,7 +348,7 @@ const About = () => {
             "Designed and implemented high-throughput payment processing systems handling 10M+ transactions daily",
             "Mentored and developed 15+ junior and mid-level developers into productive team members",
             "Reduced application deployment time by 60% through implementation of CI/CD pipelines and automation",
-            "Delivered 50+ projects on time across Banking, E-commerce, Logistics, and Travel domains"
+            "Delivered 12+ projects on time across Banking, E-commerce, Logistics, and Travel domains"
           ].map((achievement, i) => (
             <div key={i} className="flex gap-3 items-start">
               <div className="w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 flex-shrink-0"></div>
