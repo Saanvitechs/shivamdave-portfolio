@@ -3,7 +3,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white">
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 pt-32">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-10 lg:pt-20">
 
         {/* Badge */}
         <span className="inline-block mb-6 px-4 py-1 text-xs tracking-widest text-blue-400 border border-blue-400/30 rounded-full">
@@ -11,7 +11,7 @@ const Home = () => {
         </span>
 
         {/* Title */}
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-4xl">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight max-w-4xl">
           Senior Full-Stack{" "}
           <span className="text-blue-500">Java Developer</span>
           <br />
@@ -82,7 +82,7 @@ const Home = () => {
       </section>
 
       {/* EXPERIENCE STATS */}
-      <section className="max-w-6xl mx-auto px-6 mt-24 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 mt-16 lg:mt-24 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
         {[
           { label: "Years Experience", value: "11+" },
           { label: "Projects Delivered", value: "60+" },
@@ -91,7 +91,7 @@ const Home = () => {
         ].map((item) => (
           <div
             key={item.label}
-            className="border border-white/10 rounded-xl p-6 backdrop-blur"
+            className="border border-white/10 rounded-xl p-4 sm:p-6 backdrop-blur"
           >
             <p className="text-3xl font-bold">{item.value}</p>
             <p className="text-gray-400 mt-2 text-sm">{item.label}</p>

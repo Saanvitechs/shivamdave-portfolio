@@ -8,15 +8,15 @@ const Sidebar = () => {
     return (
         <>
             {/* 🔹 Mobile Profile Button */}
-            <div className="md:hidden fixed top-4 left-4 z-[60]">
+            <div className="lg:hidden fixed top-4 left-4 z-[60]">
                 <button
                     onClick={() => setOpen(true)}
                     className="bg-[#1a1a1a] text-white px-3 py-2 rounded-full shadow-lg flex items-center gap-2"
                 >
                     <img
-                        src="/profile_photo.jpg"
+                        src="/profile_photo.jpeg"
                         alt="profile"
-                        className="w-9 h-9 rounded-full object-cover"
+                        className="w-9 h-9 shrink-0 rounded-full object-cover"
                     />
                     <span className="text-sm font-medium">Shivam</span>
                 </button>
@@ -26,49 +26,47 @@ const Sidebar = () => {
             {open && (
                 <div
                     onClick={() => setOpen(false)}
-                    className="fixed inset-0 bg-black/60 z-40 md:hidden"
+                    className="fixed inset-0 bg-black/60 z-40 lg:hidden"
                 ></div>
             )}
 
             {/* 🔹 Sidebar */}
             <aside
                 className={`
-          fixed top-4 md:top-10 left-4
-          w-[280px] md:w-[300px]
-          h-[90vh]
+          fixed top-4 lg:top-10 left-4
+          w-[min(300px,calc(100vw-2rem))] lg:w-[300px]
+          h-[calc(100dvh-2rem)] lg:h-[calc(100dvh-5rem)]
           bg-[#1a1a1a]
-          p-6 md:p-8
+          p-5 lg:p-8
           flex flex-col items-center
           rounded-3xl shadow-lg
           overflow-y-auto
           z-50
           transform transition-transform duration-300
-          ${open ? "translate-x-0" : "-translate-x-[120%] md:translate-x-0"}
+          ${open ? "translate-x-0" : "-translate-x-[120%] lg:translate-x-0"}
         `}
             >
                 {/* ❌ Close */}
                 <button
                     onClick={() => setOpen(false)}
-                    className="absolute top-4 right-4 md:hidden text-zinc-400 hover:text-white"
+                    className="absolute top-4 right-4 lg:hidden text-zinc-400 hover:text-white"
                 >
                     <X size={22} />
                 </button>
 
                 {/* Avatar */}
-                <div className="relative bg-[#2a2a2a] rounded-3xl p-8 mb-6">
-                    {/* <div className="w-32 h-32 rounded-2xl bg-gray-700 flex items-center justify-center text-4xl text-white font-bold"> */}
+                <div className="bg-[#2a2a2a] rounded-3xl p-4 mb-6 w-full max-w-[200px] shrink-0">
                     <img
-                        src="/profile_photo.jpg"
-                        alt="profile"
-                        className="w-29 h-29 rounded-full object-cover"
+                        src="/profile_photo.jpeg"
+                        alt="Shivam Dave"
+                        className="w-full aspect-square rounded-2xl object-cover"
                     />
-                    {/* </div> */}
                 </div>
 
                 <h2 className="text-2xl font-semibold text-white">Shivam Dave</h2>
                 <span className="text-sm text-zinc-400 mt-2">Software Developer</span>
 
-                <div className="w-full h-px bg-zinc-800 my-4"></div>
+                <div className="w-full h-px shrink-0 bg-zinc-800 my-4"></div>
 
                 <div className="w-full space-y-5">
                     <InfoItem icon={<Mail size={20} />} label="Email" value="Shivam.dave2591@gmail.com" />
@@ -122,7 +120,7 @@ const InfoItem = ({ icon, label, value }) => (
         <div className="bg-[#2a2a2a] p-3 rounded-lg text-yellow-500">{icon}</div>
         <div>
             <p className="text-xs text-zinc-500 uppercase tracking-wider mb-1">{label}</p>
-            <p className="text-sm text-zinc-300">{value}</p>
+            <p className="text-sm text-zinc-300 break-all">{value}</p>
         </div>
     </div>
 );

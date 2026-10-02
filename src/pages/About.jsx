@@ -139,7 +139,7 @@ const About = () => {
       <section className="max-w-6xl mx-auto relative">
         <div className="absolute -inset-1 rounded-3xl blur-2xl"></div>
 
-        <h1 className="text-4xl md:text-5xl font-bold text-white">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
           About <span className="text-yellow-400">Me</span>
         </h1>
 
@@ -319,14 +319,14 @@ const About = () => {
             {[...skills, ...skills].map((skill, i) => (
               <li key={i} className="flex-shrink-0">
                 <div
-                  className="group relative flex items-center justify-center w-52 h-56 rounded-2xl
+                  className="group relative flex items-center justify-center w-40 h-44 sm:w-52 sm:h-56 rounded-2xl
                   bg-gradient-to-br from-zinc-900 to-zinc-950 border border-zinc-800
                   hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all"
                 >
                   <img
                     src={skill.img}
                     alt={skill.name}
-                    className="w-32 h-32 object-contain group-hover:scale-125 transition-transform"
+                    className="w-24 h-24 sm:w-32 sm:h-32 object-contain group-hover:scale-125 transition-transform"
                   />
                   <span className="absolute bottom-4 text-sm text-zinc-400 group-hover:text-white">
                     {skill.name}
@@ -360,7 +360,7 @@ const About = () => {
 
       {/* CTA */}
       <section className="max-w-6xl mx-auto px-0 md:px-6 py-16 border-t border-slate-800">
-        <div className="bg-slate-900 border border-slate-800 p-10 text-center">
+        <div className="bg-slate-900 border border-slate-800 p-6 sm:p-10 text-center">
           <h2 className="text-2xl font-bold mb-4 text-white">
             Let's Build Something Great Together
           </h2>
